@@ -1,0 +1,30 @@
+{
+  "name": "tg_bot_request_artmenxxx",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artmenxxx/Tg_Bot_Request_Artmenxxx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artmenxxx/Tg_Bot_Request_Artmenxxx/issues"
+  },
+  "homepage": "https://github.com/Artmenxxx/Tg_Bot_Request_Artmenxxx#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "grammy": "^1.43.0",
+    "mariadb": "^3.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
