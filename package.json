@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Artmenxxx/Tg_Bot_Request_Artmenxxx#readme",
   "dependencies": {
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "grammy": "^1.43.0",
     "mariadb": "^3.5.3"
   },
