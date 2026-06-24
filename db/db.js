@@ -1,11 +1,18 @@
-import mariadb from "mariadb"
+import Database from "better-sqlite3";
 
-const pool = mariadb.createPool ({ 
-        host: 'localhost',
-        user: 'user',
-        password: "password",
-        database: "db",
-        connectionLimit: "1"
-    })
+const db = new Database("database.db")
 
-export default pool
+db.pragma('journal_mode = WAL')
+
+console.log("Бд включена")
+
+db.exec(`
+  CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    telegram_id INTEGER UNIQUE,
+    email TEXT,
+    text TEXT,
+    user_name TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  )
+`);
